@@ -15,11 +15,11 @@ class ProductSeeder extends Seeder
     {
         //
         DB::table('products')->insert([
-            'name'=> 'New Mobile',
-            'category'=>'Mobile',
+            'name'=> 'TV',
+            'category'=>'TV',
             'price'=>'12.99',
-            'image'=> 'https://www.pexels.com/photo/silver-samsung-smartphone-47261/',
-            'description'=> 'A new mobile has been released'
+            'image'=> 'https://www.pexels.com/photo/retro-tv-on-river-shore-near-forest-3764958/',
+            'description'=> 'A new TV has been released'
         ]);
     }
 }
