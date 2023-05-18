@@ -37,17 +37,17 @@
                                     </a>
                                 </div>
                                 <div class="p-2">
-                                    <form class="form-horizontal" action="https://themesbrand.com/skote/layouts/index.html">
-        
+                                    <form class="form-horizontal" action="/" method="POST">
+                                        @csrf
                                         <div class="mb-3">
-                                            <label for="username" class="form-label">Username</label>
-                                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                            <label for="username" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email" id="username" placeholder="Enter username">
                                         </div>
                 
                                         <div class="mb-3">
                                             <label class="form-label">Password</label>
                                             <div class="input-group auth-pass-inputgroup">
-                                                <input type="password" class="form-control" placeholder="Enter password" aria-label="Password" aria-describedby="password-addon">
+                                                <input type="password" class="form-control" name="password" placeholder="Enter password" aria-label="Password" aria-describedby="password-addon">
                                                 <button class="btn btn-light " type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
                                             </div>
                                         </div>
@@ -63,7 +63,7 @@
                                             <button class="btn btn-primary waves-effect waves-light" type="submit">Log In</button>
                                         </div>
             
-                                        <div class="mt-4 text-center">
+                                        <!-- <div class="mt-4 text-center">
                                             <h5 class="font-size-14 mb-3">Sign in with</h5>
             
                                             <ul class="list-inline">
@@ -83,11 +83,11 @@
                                                     </a>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="mt-4 text-center">
+                                        <!-- <div class="mt-4 text-center">
                                             <a href="auth-recoverpw.html" class="text-muted"><i class="mdi mdi-lock me-1"></i> Forgot your password?</a>
-                                        </div>
+                                        </div> -->
                                     </form>
                                 </div>
             
