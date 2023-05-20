@@ -15,8 +15,8 @@ class ProductSeeder extends Seeder
     {
         //
         DB::table('products')->insert([
-            'name'=> 'TV',
-            'category'=>'TV',
+            'name'=> 'Computer',
+            'category'=>'computer',
             'price'=>'12.99',
             'image'=> 'https://www.pexels.com/photo/retro-tv-on-river-shore-near-forest-3764958/',
             'description'=> 'A new TV has been released'

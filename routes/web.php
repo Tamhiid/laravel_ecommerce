@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,5 @@ Route::get('/login', function () {
 
 Route::post('/',[UserController::class, 'login']);
 Route::get('/', [ProductController::class, 'index']);
+Route::get('/detail/{id}', [ProductController::class, 'detail']);
+Route::get('/add_to_cart', [CartController::class, 'add_to_cart']);
