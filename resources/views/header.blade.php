@@ -1,3 +1,16 @@
+<?php
+
+use App\http\Controllers\CartController;
+$total = 0;
+
+if(Session::get('user'))
+{
+
+  $total = CartController::cart_item();
+}
+  
+
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">eCommerce</a>
@@ -19,7 +32,7 @@
    
       
       </ul>
-      <a href="#">Cart (0)</a>
+      <a href="#">Cart ({{ $total }})</a>
       
     </div>
   </div>

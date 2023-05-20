@@ -13,7 +13,7 @@
         <h3>Product: {{$product['name']}}</h3>
         <h5>Price: {{$product['price']}}</h5>
         <h5>Description: {{$product['description']}} </h5>
-    <form action="/add_to_cart" >
+    <form action="/add_to_cart" method="POST">
         @csrf
         <input type="hidden" name="product_id" id="" value="{{$product['id']}}">
     
