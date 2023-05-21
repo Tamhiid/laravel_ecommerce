@@ -31,8 +31,28 @@ if(Session::get('user'))
       </form>
    
       
+      
       </ul>
-      <a href="#">Cart ({{ $total }})</a>
+      @if(Session::has('user'))
+      <a href="/cartList">Cart ({{ $total }})</a>
+     
+
+
+
+        <li class="nav-item dropdown" style="list-style:none">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{Session::get('user')['name']}}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/logout">Logout</a></li>
+            
+          </ul>
+        </li>
+
+        @else
+        <a href="#">Cart ({{ $total }})</a>
+        <a href="/login">Login</a>
+        @endif
       
     </div>
   </div>
